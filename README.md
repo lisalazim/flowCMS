@@ -1,73 +1,179 @@
-# React + TypeScript + Vite
+Siap — ini **README dummy tapi profesional (ATS-friendly + portfolio-ready)** buat proyek kamu: **FlowCMS**.
+Kita posisikan seolah ini produk beneran SaaS CMS modern.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Kamu bisa langsung copy ke `README.md`.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+# 🚀 FlowCMS
 
-## React Compiler
+FlowCMS is a lightweight, developer-friendly Content Management System designed for modern teams who want to manage content faster, cleaner, and smarter.
 
-The React Compiler is currently not compatible with SWC. See [this issue](https://github.com/vitejs/vite-plugin-react/issues/428) for tracking the progress.
+Built with a frontend-first mindset and scalable architecture, FlowCMS focuses on simplicity, performance, and real-world workflows.
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## ✨ Features
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+### 🔐 Authentication
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+* Login system
+* Protected dashboard routes
+* Role-ready architecture (admin/editor – future)
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+### 📊 Dashboard
+
+* Overview metrics
+* Recent posts
+* Quick actions
+
+### 📝 Content Management
+
+* Create, edit, delete blog posts
+* Markdown / rich text ready
+* Draft & publish flow
+* Slug generation
+
+### 📁 Media (Planned)
+
+* Image upload
+* Asset management
+
+### ⚙️ Developer Friendly
+
+* Modular React components
+* Clean folder structure
+* TypeScript support
+* API-ready backend integration
+
+---
+
+## 🧠 Why FlowCMS?
+
+Most CMS platforms are either:
+
+* Too heavy
+* Too opinionated
+* Or hard to customize
+
+FlowCMS is designed for:
+
+✅ Developers
+✅ Freelancers
+✅ Small teams
+✅ Rapid prototyping
+
+It gives full control over UI, logic, and data flow.
+
+---
+
+## 🛠 Tech Stack
+
+### Frontend
+
+* React (Vite)
+* TypeScript
+* Tailwind CSS v4
+* React Router
+
+### Backend (planned / optional)
+
+* Python (Flask / Django REST)
+* PostgreSQL
+* JWT Authentication
+
+### Tooling
+
+* Git & GitHub
+* REST API
+* ESLint
+* Prettier
+
+---
+
+## 📂 Project Structure
+
+```
+src/
+ ├─ components/
+ ├─ pages/
+ │   ├─ Home
+ │   ├─ Login
+ │   └─ Dashboard
+ ├─ layouts/
+ ├─ services/
+ ├─ hooks/
+ ├─ App.tsx
+ └─ main.tsx
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+---
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## 🔑 Pages
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+### Public
+
+* Home
+* Blog
+* Login
+
+### Protected
+
+* Dashboard
+* Posts Management
+* Profile
+
+---
+
+## 🧩 Core Concepts
+
+FlowCMS follows real software engineering workflows:
+
+* Component driven UI
+* Separation of concerns
+* API abstraction layer
+* Git-based development
+* Debug-first mindset
+
+---
+
+## 🚧 Roadmap
+
+* [ ] Backend API
+* [ ] Post CRUD
+* [ ] Auth JWT
+* [ ] Media upload
+* [ ] Role permission
+* [ ] Analytics
+* [ ] Deployment
+
+---
+
+## ▶️ Run Locally
+
+```bash
+npm install
+npm run dev
 ```
+
+---
+
+## 📌 Status
+
+Currently in active development.
+
+This project is part of a personal portfolio to demonstrate:
+
+* Frontend engineering
+* System design
+* Real-world CMS workflow
+* Technical documentation
+
+---
+
+## 👩‍💻 Author
+
+Lisa Lazimaturrohmah
+Frontend Developer | Python Backend | UI/UX Enthusiast
+
+
