@@ -1,9 +1,13 @@
 import { useState } from 'react';
+
+// Icons
 import { IoMenu, IoCloseOutline,} from "react-icons/io5";
 import { RiEditCircleFill } from "react-icons/ri";
 import { IoMdAnalytics } from "react-icons/io";
 import { FcElectroDevices } from "react-icons/fc";
 
+// img
+import heroImg from '../assets/hero.png';
 
 
 
@@ -81,11 +85,33 @@ function Home() {
                     </div>
                 </div>
             </div>
+        </section>
 
+        {/* Recent Posts Section */}
+        <section className='recent-posts-section py-20 bg-gray-100'>
+            <div className='container mx-auto px-4 md:px-8 lg:px-16 py-20'>
+                <h2 className='text-3xl font-bold text-center mb-12'>Recent Posts</h2>
+                <div className='grid grid-cols-1 md:grid-cols-3 gap-8'>
+                    {/* Post Card 1 */}
+                    <div className='post-card bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300'>
+                        <img src={heroImg} alt="Hero" className="w-full h-48 object-cover mb-4 rounded-lg" />
+                        <h3 className='text-xl font-semibold mb-4'>Introducing FlowCMS: A New Way to Manage Content</h3>
+                        <p className='text-gray-600 mb-4'>Discover how FlowCMS can streamline your content management process and boost your team's productivity.</p>
+                        <a href="#" className='text-blue-600 hover:underline'>Read More</a>
+                    </div>
+                    {/* Post Card 2 */}
+                    <div className='post-card bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300'>
+                        <img src={heroImg} alt="Hero" className="w-full h-48 object-cover mb-4 rounded-lg" />
+                        <h3 className='text-xl font-semibold mb-4'>Post Title</h3>
+                        <p className='text-gray-600 mb-4'>Post description goes here.</p>
+                        <a href="#" className='text-blue-600 hover:underline'>Read More</a>
+                    </div>
+                </div>
+            </div>
         </section>
 
     </>
-)
+    )
 }
 
 export default Home
