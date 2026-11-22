@@ -1,9 +1,3 @@
-Siap — ini **README dummy tapi profesional (ATS-friendly + portfolio-ready)** buat proyek kamu: **FlowCMS**.
-Kita posisikan seolah ini produk beneran SaaS CMS modern.
-
-Kamu bisa langsung copy ke `README.md`.
-
----
 
 # 🚀 FlowCMS
 
@@ -171,7 +165,7 @@ This project is part of a personal portfolio to demonstrate:
 
 ---
 
-## 👩‍💻 Author
+## 👩‍💻 Lisa
 
 Lisa Lazimaturrohmah
 Frontend Developer | Python Backend | UI/UX Enthusiast
