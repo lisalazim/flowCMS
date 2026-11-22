@@ -1,173 +1,57 @@
+# FlowCMS
 
-# 🚀 FlowCMS
+**A landing page concept for a fictional content management product.**
 
-FlowCMS is a lightweight, developer-friendly Content Management System designed for modern teams who want to manage content faster, cleaner, and smarter.
+FlowCMS is a front-end practice project. I designed and built a responsive marketing page for an imaginary CMS, aimed at small content teams. It shows layout, responsive navigation and component styling with React and Tailwind CSS.
 
-Built with a frontend-first mindset and scalable architecture, FlowCMS focuses on simplicity, performance, and real-world workflows.
-
----
-
-## ✨ Features
-
-### 🔐 Authentication
-
-* Login system
-* Protected dashboard routes
-* Role-ready architecture (admin/editor – future)
-
-### 📊 Dashboard
-
-* Overview metrics
-* Recent posts
-* Quick actions
-
-### 📝 Content Management
-
-* Create, edit, delete blog posts
-* Markdown / rich text ready
-* Draft & publish flow
-* Slug generation
-
-### 📁 Media (Planned)
-
-* Image upload
-* Asset management
-
-### ⚙️ Developer Friendly
-
-* Modular React components
-* Clean folder structure
-* TypeScript support
-* API-ready backend integration
+> This is a **landing page only**. There is no backend, editor, database or analytics behind it. The product, its features and the "Recent Posts" content are placeholders written for the design.
 
 ---
 
-## 🧠 Why FlowCMS?
+## What's on the page
 
-Most CMS platforms are either:
+- **Navigation bar** fixed to the top, with a full-screen mobile menu (open/close state handled in React)
+- **Hero section** with a background image, headline and two calls to action
+- **Features section** with three cards: content editing, analytics and device support
+- **Recent posts section** with placeholder blog cards
+- **Footer** with product name and tagline
 
-* Too heavy
-* Too opinionated
-* Or hard to customize
+## Tech stack
 
-FlowCMS is designed for:
+- React 19 with TypeScript
+- Vite 7
+- Tailwind CSS 4 (configured through the `@theme` directive)
+- React Icons
+- Google Fonts: Inter and Roboto
 
-✅ Developers
-✅ Freelancers
-✅ Small teams
-✅ Rapid prototyping
+## What I practiced
 
-It gives full control over UI, logic, and data flow.
+- Building a responsive layout with Tailwind's mobile-first breakpoints
+- Managing simple UI state with `useState` for the mobile menu
+- Setting up Tailwind CSS 4 with Vite and custom font tokens
+- Organizing a React project into pages and assets
 
----
-
-## 🛠 Tech Stack
-
-### Frontend
-
-* React (Vite)
-* TypeScript
-* Tailwind CSS v4
-* React Router
-
-### Backend (planned / optional)
-
-* Python (Flask / Django REST)
-* PostgreSQL
-* JWT Authentication
-
-### Tooling
-
-* Git & GitHub
-* REST API
-* ESLint
-* Prettier
-
----
-
-## 📂 Project Structure
-
-```
-src/
- ├─ components/
- ├─ pages/
- │   ├─ Home
- │   ├─ Login
- │   └─ Dashboard
- ├─ layouts/
- ├─ services/
- ├─ hooks/
- ├─ App.tsx
- └─ main.tsx
-```
-
----
-
-## 🔑 Pages
-
-### Public
-
-* Home
-* Blog
-* Login
-
-### Protected
-
-* Dashboard
-* Posts Management
-* Profile
-
----
-
-## 🧩 Core Concepts
-
-FlowCMS follows real software engineering workflows:
-
-* Component driven UI
-* Separation of concerns
-* API abstraction layer
-* Git-based development
-* Debug-first mindset
-
----
-
-## 🚧 Roadmap
-
-* [ ] Backend API
-* [ ] Post CRUD
-* [ ] Auth JWT
-* [ ] Media upload
-* [ ] Role permission
-* [ ] Analytics
-* [ ] Deployment
-
----
-
-## ▶️ Run Locally
+## Run locally
 
 ```bash
+git clone https://github.com/lisalazim/flowCMS.git
+cd flowCMS
 npm install
 npm run dev
 ```
 
----
+Then open the local address Vite prints, usually `http://localhost:5173`.
 
-## 📌 Status
+## Possible next steps
 
-Currently in active development.
-
-This project is part of a personal portfolio to demonstrate:
-
-* Frontend engineering
-* System design
-* Real-world CMS workflow
-* Technical documentation
+- Make the navigation links scroll to their sections
+- Split the page into reusable components (`Navbar`, `Hero`, `FeatureCard`, `PostCard`)
+- Load the recent posts from a JSON file or a headless CMS
 
 ---
 
-## 👩‍💻 Lisa
+## Author
 
-Lisa Lazimaturrohmah
-Frontend Developer | Python Backend | UI/UX Enthusiast
+**Lisa Lazimaturrohmah**: EdTech developer and Vice Principal for Student Affairs
 
-
+GitHub: [@lisalazim](https://github.com/lisalazim)
